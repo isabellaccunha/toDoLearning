@@ -1,0 +1,63 @@
+.list{
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding:0 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.list h1{
+    text-align: center;
+
+}
+
+.lista-tarefa{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    margin: 20px;
+}
+
+.lista-tarefa ul{
+    list-style: none;
+    width: 100%;
+}
+
+.lista-tarefa ul li{
+    padding:  20px 0;
+    font-size: 20px;
+    font-family: Calibri Light;
+}
+
+.lista-tarefa h2 {
+  font-size: 20px;  
+}
+
+.lista-tarefa a{
+    text-decoration: none;
+}
+
+.lista-tarefa button{
+    margin: 5px 2px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.lista-tarefa .btn-excluir{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    color:#fff;
+    font-size: 15px;
+    border: none;
+}
+
+.lista-tarefa .btn-update{
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+    color:#fff;
+    font-size: 15px;
+    border: none;
+}
