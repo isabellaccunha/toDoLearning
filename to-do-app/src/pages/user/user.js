@@ -46,7 +46,7 @@ export default class User extends Component{
                 <ul className="userList">
                     {this.state.user.map(user => (
                         <li key={user.id}>
-                            <Link to='/create'>{user.name}</Link>
+                            <Link to={ {pathname:'/list', state:{user:user.id} } }>{user.name}</Link>
                          </li>
                     ))}    
                 </ul>
