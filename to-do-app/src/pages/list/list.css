@@ -1,33 +1,33 @@
 .list{
-    max-width: 700px;
-    margin: 20px auto 0;
-    padding:0 20px;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 5px;
+    max-width: 900px !important;
+    margin: 50px auto 0 !important;
+    padding:0 100px !important;
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    border-radius: 5px !important;
 }
 
 .list h1{
-    text-align: center;
+    text-align: center !important;
 
 }
 
 .lista-tarefa{
-    display: flex;
-    justify-content: center;
-    padding:20px;
-    margin: 20px;
+    display: flex !important;
+    justify-content: center !important;
+    padding:20px !important;
+    margin: 20px !important;
 }
 
 .lista-tarefa ul{
-    list-style: none;
-    width: 100%;
+    list-style: none !important;
+    width: 100% !important;
 }
 
 .lista-tarefa ul li{
-    padding:  20px 0;
-    font-size: 20px;
-    font-family: Calibri Light;
+    padding:  20px 0 !important;
+    font-size: 20px !important;
+    font-family: Calibri Light !important;
 }
 
 .lista-tarefa h2 {
@@ -39,7 +39,7 @@
 }
 
 .lista-tarefa button{
-    margin: 5px 2px;
+    margin: -10px 0 0  10px;
     cursor: pointer;
     padding: 0;
 }
