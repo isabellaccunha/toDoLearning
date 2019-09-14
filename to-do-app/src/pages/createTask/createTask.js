@@ -11,7 +11,7 @@ export default class CreateTask extends Component{
     }
     render() {
         return(
-            <section className="createCard">
+            <section className="card">
                 <h1 className="createTitle">Criar Tarefa</h1>
                 <span>status: {this.state.status}</span>
                 <input className="createTextBox" type="text" placeholder="Digite aqui sua tarefa"/>

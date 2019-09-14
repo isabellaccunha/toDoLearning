@@ -12,7 +12,7 @@ export default class UpdateTask extends Component{
     }
     render() {
         return(
-            <section className="updateCard">
+            <section className="card">
                 <h1 className="updateTitle">Criar Tarefa</h1>
                 {/* input tem que vir preenchido */}
                 <input className="updateTextBox" type="text" value={this.state.descricao} />
