@@ -10,70 +10,15 @@ export default class List extends Component{
         console.log(user)
 
         this.state = {
-            idUser:user,
-            users:[
-                {
-                    id:1,
-                    name:'Isabella',
-                    tasks:[
-                        {task:'Comprar Feijão'},
-                        {task:'Comprar Arroz'},
-                        {task:'Comprar Refri'}
-                    ]
-                },
-                {
-                    id:2,
-                    name:'Breno',
-                    tasks:[
-                        {task:'Comprar Macarrão'},
-                        {task:'Comprar Suco'},
-                        {task:'Comprar Coca'}
-                    ]
-                },
-
-                {
-                    id:3,
-                    name:'Bruno',
-                    tasks:[
-                        {task:'Comprar Camisa'},
-                        {task:'Comprar carro'},
-                        {task:'Comprar sabonete'}
-                    ]
-                },
-
-                {
-                    
-                    id:4,
-                    name:'Marllon',
-                    tasks:[
-                        {task:'Comprar rolha'},
-                        {task:'Comprar alho'},
-                        {task:'Comprar aipim'}
-                    ]
-
-                },
-
-                {
-                    id:5,
-                    name:'Alex Marden',
-                    tasks:[
-                        {task:'Comprar Feijão preto'},
-                        {task:'Comprar Capacete'},
-                        {task:'Comprar moto'}
-                    ]
-                },
-
-                {
-                    id:6,
-                    name:'Guilherme',
-                    tasks:[
-                        {task:'Comprar Feijão'},
-                        {task:'Comprar Arroz'},
-                        {task:'Comprar Refri'}
-                    ]
-                }
-                
-            ]
+            user:{
+                id:1,
+                name:'bruno',
+                tasks:[
+                    {tarefa:'Comprar manga'},
+                    {tarefa:'Comprar feijão'},
+                    {tarefa:'Comprar arroz'}
+                ]
+            }
         }
     }
 
@@ -82,15 +27,16 @@ export default class List extends Component{
         return (
             <section className="list">
                 <h1>Lista de tarefas</h1>
+                <span><button className="btn-adicionar"><i className="fas fa-plus"></i></button></span>
                 <div className="lista-tarefa">
-                    <ul>
-                        {
-                            this.state.users.map(user => (
-                                    
-                                <li><a>{user.name}</a></li>
-
-                            ))
-                        }
+                   <ul className="listas">
+                        {this.state.user.tasks.map(user => (
+                            <li key={user.id}>
+                               {user.tarefa}
+                               <button className="btn-update"><i className="fas fa-pen"></i></button>
+                               <button className="btn-excluir"><i className="fas fa-trash"></i></button>
+                            </li>
+                        ))}   
                     </ul>
                 </div>
             </section>
