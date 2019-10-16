@@ -1,13 +1,14 @@
 import React, {Component} from "react";
-import './list.css'
+import './list.css';
+import { Link } from 'react-router-dom';
 
 export default class List extends Component{
 
     constructor(props){
         super(props);
 
-        const { user } = this.props.location.state;
-        console.log(user)
+        //const { user } = this.props.location.state;
+        //console.log(user)
 
         this.state = {
             user:{
@@ -33,6 +34,7 @@ export default class List extends Component{
                         {this.state.user.tasks.map(user => (
                             <li key={user.id}>
                                {user.tarefa}
+                               <Link to="/update">HOME</Link> 
                                <button className="btn-update"><i className="fas fa-pen"></i></button>
                                <button className="btn-excluir"><i className="fas fa-trash"></i></button>
                             </li>
